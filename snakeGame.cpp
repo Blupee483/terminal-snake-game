@@ -6,19 +6,30 @@
 const short gridColumns = 20;
 const short gridRows = 10;
 
+//saves the grid as a 2d dynamic vector (AKA list)
 std::vector<std::vector<char>> grid(gridRows, std::vector<char>(gridColumns, 0));
-struct SnakeCell{
+struct SnakeCell{ //each seperate segment of the snake gets its own SnakeCell
     short x;
     short y;
     int life;
 };
+
+//The snake's body is stored as a list of snakecells
 std::vector<SnakeCell> snakeBody = {};
+
+//The direction the snake it moving in (as a vector)
 short snakeDirX = 0;
 short snakeDirY = 1;
+
+//the current position of the snake's head
 short snakePosX = 0;
 short snakePosY = 0;
+
+//The apple's position (initialized in the middle of the grid)
 short applePosX = gridColumns/2;
 short applePosY = gridRows/2;
+
+//The length of the snake (initialized at 5)
 short snakeLength = 5;
 
 bool gameOver = false;
