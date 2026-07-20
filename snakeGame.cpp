@@ -1,4 +1,6 @@
 //INSPIRED BY THE NOKIA SNAKE GAME
+//To be run in your computer's terminal
+//.exe only works for Windows, so this program is currently WindowsOS exclusive
 
 #include <iostream>
 #include <vector>
