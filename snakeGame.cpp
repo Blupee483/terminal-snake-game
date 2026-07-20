@@ -1,3 +1,5 @@
+//INSPIRED BY THE NOKIA SNAKE GAME
+
 #include <iostream>
 #include <vector>
 #include <cctype>
